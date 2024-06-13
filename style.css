@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins'sans-serif;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #001f3f;
     margin: 0 ;
@@ -38,9 +45,13 @@ button {
     font-size: 20px;
 }
 
-.buttons {
+#buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     padding: 20px;
+}
+
+#button .equal {
+    grid-template-columns: auto;
 }
