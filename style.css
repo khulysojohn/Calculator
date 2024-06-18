@@ -1,4 +1,4 @@
-code*{
+*{
     margin: 0;
     padding: 0;
     font-family: 'poppins'sans-serif;
@@ -6,7 +6,7 @@ code*{
 }
 
 body {
-    background-color: #001f3f;
+    background-color: aqua;
     margin: 0 ;
     display: flex;
     justify-content: center;
@@ -15,28 +15,34 @@ body {
 }
 
 .container {
-    font-family: Arial, sans-serif;
+    background-color: cornflowerblue;
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
 }
 
 #display {
-    width: 100%;
+    position: relative;
+    left: -20px;
+    right: -20px;
     padding: 20px;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: left;
-    border: none;
-    background-color: #001f3f;
+    border: solid 1px black;
+    background-color:darkmagenta;
     color: white;
 }
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 20px;
 
-button:active {
-    background-color: #d9d9d9;
-}
+} 
 
-button {
-    width: 60px;
+
+#buttons > button {
+    
     height: 60px;
     border-radius: 10px;
     background-color: transparent;
@@ -46,13 +52,13 @@ button {
     font-size: 20px;
 }
 
-#buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 20px;
+#buttons > button:active {
+      background-color: #d9d9d9;
 }
 
-#button .equal {
-    grid-template-columns: auto;
+#buttons > .equal {
+    background-color: orange;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
 }
