@@ -1,5 +1,5 @@
-#About
-##Project Overview
+#About#
+##Project Overview##
 The Calculator project is a user-friendly web-based calculator designed to perform basic arithmetic operations. It features a clean and modern interface, with options to switch between light and dark modes for better user experience and accessibility. The project is developed using HTML, CSS, and JavaScript, making it a lightweight and efficient tool for everyday calculations.
 
 ##Features
